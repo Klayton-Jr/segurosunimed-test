@@ -1,0 +1,9 @@
+services:
+  api:
+    container_name: api_seguro
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api_seguro
+    ports:
+      - "8080:8080"
